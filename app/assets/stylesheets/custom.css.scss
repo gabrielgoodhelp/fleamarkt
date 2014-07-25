@@ -61,3 +61,15 @@ a:hover {
 	}
 
 }
+
+.jumbotron {
+  background-image: url('jumbotron.jpg');
+  height:350px;
+  h1 {
+    font-family: guardian-egyptt, georgia, serif;
+    color:white;
+  }
+  h2 {
+    font-family: guardian-egyptt, georgia, serif;
+  }
+}

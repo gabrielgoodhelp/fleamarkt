@@ -4,6 +4,21 @@
   <%= devise_error_messages! %>
 
   <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, :autofocus => true, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :surname %>
+    <%= f.text_field :surname, :autofocus => true, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :city %>
+    <%= f.text_field :city, :autofocus => true, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :email %>
     <%= f.email_field :email, :autofocus => true, class: "form-control" %>
   </div>

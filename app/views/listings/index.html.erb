@@ -9,15 +9,14 @@
                     <p><%= number_to_currency(listing.price) %></p>
                     <p><%= "Sold by #{listing.user.name}" %></p>
                     <p><%= listing.description %></p>
-                    <%= link_to "Show", listing, class: "btn btn-link" %>
-                    <%= link_to "Edit", edit_listing_path(listing), class: "btn btn-link" %>
-                    <%= link_to "Delete", listing, class: "btn btn-link", method: :delete, data: { confirm: "Are you sure?" } %>
                   </div>
                 </div>
           </div>
     <% end %> 
   </div>
 </div>
+
+<br>
 
 <% if user_signed_in? %>
 <%= link_to "New Listing", new_listing_path, class: "btn btn-link" %>

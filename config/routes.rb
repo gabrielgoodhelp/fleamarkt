@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'pages/about'
+  get 'pages/home'
 
   resources :listings
 
@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'pages/about' 
 
   get 'pages/contact'
+
+  get 'merchant' => "listings#merchant"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

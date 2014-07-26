@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   validates :city, presence: true
 
   has_many :listings, dependent: :destroy
+  has_many :sales, class_name: "Order", foreign_key: "merchant_id"
+  has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
 end

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   resources :orders
-
+ get 'pages/home'
+  
   devise_for :users
-  get 'pages/home'
-
+ 
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
   end
 
   root 'listings#index'
@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   get 'merchant' => "listings#merchant"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

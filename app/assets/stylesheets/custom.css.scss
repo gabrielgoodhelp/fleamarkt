@@ -7,9 +7,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar-default-color {
-	background-color: #8B5742;
-}
+
 
 .navbar-default {
 	background-color: #8B5742;
@@ -26,13 +24,21 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Helvetica neue', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color:#FBA16C;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color:#E9C2A6;
+	color:white;
+}
+
+.navbar-default .navbar-nav .active > li > a:active {
+	background-color: #8B5742;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #8B5742;
 }
 
 .center {
@@ -70,10 +76,10 @@ a:hover {
   background-image: image-url('jumbotron.jpg');
   height:350px;
   h1 {
-    font-family: guardian-egyptt, georgia, serif;
+    font-family: 'Helvetica Neue', serif;
     color:white;
   }
   h2 {
-    font-family: guardian-egyptt, georgia, serif;
+    font-family: 'Helvetica Neue', serif;
   }
 }
